@@ -9,7 +9,7 @@ export async function POST(req) {
         const { firstName, lastName, email, phone, message } = body;
 
         const data = await resend.emails.send({
-            from: "onboarding@resend.dev",
+            from: "KK Enterprise <kkenterprise0410@gmail.com>",
             to: "kkenterprise0410@gmail.com",
             subject: `New Inquiry from ${firstName} ${Date.now()}`,
             replyTo: email,
