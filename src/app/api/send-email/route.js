@@ -11,7 +11,7 @@ export async function POST(req) {
 
     const { data, error } = await resend.emails.send({
       from: "KK Enterprise <onboarding@resend.dev>",
-      to: "hp2726975@gmail.com", // your verified email
+      to: "kkenterprise0410@gmail.com", // your verified email
       subject: "New Contact Form Submission",
       html: `
         <h2>New Website Inquiry</h2>
