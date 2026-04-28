@@ -217,7 +217,7 @@ const Footer = () => {
         <a href="https://www.linkedin.com/in/harshalpatel-nov4"
           target="_blank"
           className="opacity-55 hover:opacity-100 transition-opacity font-bold cursor-pointer">
-          <h1 className="text-sm">Made  ❤️ by Harshal Patel</h1></a>
+          <h1 className="text-sm">Made with ❤️ by Harshal Patel</h1></a>
       </div>
     </footer>
   );
