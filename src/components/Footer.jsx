@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link";
 import { useState } from "react";
 import toast from "react-hot-toast";
 
@@ -203,8 +204,12 @@ const Footer = () => {
       <div className="bg-[#1E1C18] border-t border-white/10 px-6 lg:px-12 py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-white">
         <div className="text-xs opacity-45">© 2026 KK ENTERPRISE. All Rights Reserved.</div>
         <div className="flex gap-8">
-          <div className="text-xs opacity-45">Terms & conditions</div>
-          <div className="text-xs opacity-45">Privacy Policy</div>
+          <a href="/terms-and-conditions" className="text-xs opacity-45 hover:opacity-100 transition-opacity">
+            Terms & conditions
+          </a>
+          <a className="text-xs opacity-45 hover:opacity-100 transition-opacity">
+            Privacy Policy
+          </a>
         </div>
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}

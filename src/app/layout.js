@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Toaster } from "react-hot-toast";
 import localFont from 'next/font/local'
+import { FloatingToggle } from './page';
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
@@ -61,10 +62,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="font-sans bg-white text-gray-900">
+      <body className="font-sans bg-white text-gray-900 overflow-x-hidden">
         <Toaster position="top-right" />
         <Navbar />
         <main className="pt-16">{children}</main>
+        <FloatingToggle />
         <Footer />
       </body>
     </html>

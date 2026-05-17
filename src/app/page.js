@@ -3,9 +3,46 @@ import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
 import Script from 'next/script';
+import { PhoneCall } from 'lucide-react';
 
 // --- Components ---
 
+export const FloatingToggle = () => {
+  const [visible, setVisible] = useState(true);
+  return (
+    <div className="fixed bottom-6 right-4 z-50 flex flex-col items-end gap-2">
+      {visible && (
+        <div className="flex flex-col gap-2 items-end">
+          <a
+            href="https://wa.me/919925590208"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-[#25D366] text-white px-4 py-2.5 rounded-full shadow-lg text-sm font-semibold hover:brightness-110 transition"
+          >
+            <svg viewBox="0 0 32 32" fill="currentColor" className="w-5 h-5 flex-shrink-0">
+              <path d="M16 3C9.373 3 4 8.373 4 15c0 2.385.668 4.61 1.832 6.51L4 29l7.697-1.814A12.94 12.94 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm6.406 16.594c-.266.748-1.566 1.43-2.14 1.504-.549.072-1.234.102-1.992-.125-.459-.14-1.05-.326-1.806-.64-3.178-1.373-5.256-4.586-5.414-4.8-.158-.214-1.285-1.71-1.285-3.262 0-1.553.814-2.318 1.103-2.633.289-.315.633-.394.844-.394.211 0 .422.002.607.01.195.01.457-.074.713.545.266.64.906 2.205.986 2.365.08.16.133.348.027.556-.105.21-.16.34-.316.523-.158.184-.332.41-.473.55-.158.158-.322.33-.138.648.184.317.82 1.352 1.762 2.19 1.21 1.077 2.23 1.41 2.547 1.568.316.158.5.133.684-.08.184-.211.79-.922 1-.237 0 0 .526 1.406.79 1.917.265.51.159.905.105 1.151z" />
+            </svg>
+            WhatsApp
+          </a>
+          <Link
+            href="#contact"
+            className="flex items-center gap-2 bg-[#F97316] text-white px-4 py-2.5 rounded-full shadow-lg text-sm font-semibold hover:brightness-110 transition"
+          >
+            <PhoneCall size={16} />
+            Get Free Quote
+          </Link>
+        </div>
+      )}
+      <button
+        onClick={() => setVisible(!visible)}
+        className="w-12 h-12 rounded-full bg-gray-800 text-white flex items-center justify-center shadow-lg hover:bg-gray-700 transition text-base"
+        title={visible ? "Hide" : "Contact us"}
+      >
+        {visible ? "✕" : "💬"}
+      </button>
+    </div>
+  );
+}
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -37,12 +74,13 @@ const Hero = () => {
         </p>
 
         <div className="mt-8 animate-fade-up" style={{ animationDelay: '0.3s' }}>
-          <button
-            onClick={scrollToContact}
-            className="bg-white text-gray-900 px-8 py-3 rounded-md font-medium text-sm hover:bg-[#EDE8DF] hover:-translate-y-0.5 transition-all shadow-lg"
-          >
-            Get a Free Quote
-          </button>
+          <a href="#contact">
+            <span
+              className="bg-white text-gray-900 px-8 py-3 rounded-md font-medium text-sm hover:bg-[#EDE8DF] hover:-translate-y-0.5 transition-all shadow-lg"
+            >
+              Get a Free Quote
+            </span>
+          </a>
         </div>
       </div>
     </section>
