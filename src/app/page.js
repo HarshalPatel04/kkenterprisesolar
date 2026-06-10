@@ -3,23 +3,33 @@ import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
 import Script from 'next/script';
-import { PhoneCall } from 'lucide-react';
+import { ArrowBigDown, PhoneCall } from 'lucide-react';
 
 // --- Components ---
 
 export const FloatingToggle = () => {
   const [visible, setVisible] = useState(true);
+  const message = `Hello KK Enterprise,
+I am interested in Solar Installation.
+
+Please share:
+• System details
+• Subsidy information
+• Pricing
+
+Thank you.
+`;
   return (
     <div className="fixed bottom-6 right-4 z-50 flex flex-col items-end gap-2">
       {visible && (
         <div className="flex flex-col gap-2 items-end">
           <a
-            href="https://wa.me/919925590208"
+            href={`https://wa.me/919925590016?text=${encodeURIComponent(message)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-[#25D366] text-white px-4 py-2.5 rounded-full shadow-lg text-sm font-semibold hover:brightness-110 transition"
           >
-            <svg viewBox="0 0 32 32" fill="currentColor" className="w-5 h-5 flex-shrink-0">
+            <svg viewBox="0 0 32 32" fill="currentColor" className="w-5 h-5 shrink">
               <path d="M16 3C9.373 3 4 8.373 4 15c0 2.385.668 4.61 1.832 6.51L4 29l7.697-1.814A12.94 12.94 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm6.406 16.594c-.266.748-1.566 1.43-2.14 1.504-.549.072-1.234.102-1.992-.125-.459-.14-1.05-.326-1.806-.64-3.178-1.373-5.256-4.586-5.414-4.8-.158-.214-1.285-1.71-1.285-3.262 0-1.553.814-2.318 1.103-2.633.289-.315.633-.394.844-.394.211 0 .422.002.607.01.195.01.457-.074.713.545.266.64.906 2.205.986 2.365.08.16.133.348.027.556-.105.21-.16.34-.316.523-.158.184-.332.41-.473.55-.158.158-.322.33-.138.648.184.317.82 1.352 1.762 2.19 1.21 1.077 2.23 1.41 2.547 1.568.316.158.5.133.684-.08.184-.211.79-.922 1-.237 0 0 .526 1.406.79 1.917.265.51.159.905.105 1.151z" />
             </svg>
             WhatsApp
@@ -33,6 +43,7 @@ export const FloatingToggle = () => {
           </Link>
         </div>
       )}
+
       <button
         onClick={() => setVisible(!visible)}
         className="w-12 h-12 rounded-full bg-gray-800 text-white flex items-center justify-center shadow-lg hover:bg-gray-700 transition text-base"
@@ -74,14 +85,22 @@ const Hero = () => {
         </p>
 
         <div className="mt-8 animate-fade-up" style={{ animationDelay: '0.3s' }}>
-          <a href="#contact">
+          <button
+            onClick={() => {
+              document.getElementById("contact")?.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }}
+          >
             <span
               className="bg-white text-gray-900 px-8 py-3 rounded-md font-medium text-sm hover:bg-[#EDE8DF] hover:-translate-y-0.5 transition-all shadow-lg"
             >
               Get a Free Quote
             </span>
-          </a>
+          </button>
         </div>
+
       </div>
     </section>
   );
@@ -128,10 +147,10 @@ const Solutions = () => {
   const [activeCard, setActiveCard] = useState(2); // Default to 3rd card (index 2)
 
   const solutions = [
-    { title: "Residential Solar Systems", desc: "Power your home with clean energy, cut electricity bills, and enjoy long-term savings with reliable solar panels." },
-    { title: "Commercial Solar Systems", desc: "Reduce business costs, boost sustainability, and make your company future-ready with efficient solar solutions." },
-    { title: "Industrial Solar Systems", desc: "large-scale, high-capacity photovoltaic (PV) installations designed to meet the heavy energy demands.", dark: true },
-    { title: "Maintenance and Support", desc: "Keep your system performing at its best with regular monitoring, servicing, and expert assistance." },
+    { title: "Residential Solar Systems", desc: "Power your home with clean energy, cut electricity bills, and enjoy long-term savings with reliable solar panels.", link: "/services/residential" },
+    { title: "Commercial Solar Systems", desc: "Reduce business costs, boost sustainability, and make your company future-ready with efficient solar solutions.", link: "/services/commercial" },
+    { title: "Industrial Solar Systems", desc: "large-scale, high-capacity photovoltaic (PV) installations designed to meet the heavy energy demands.", dark: true, link: "/services" },
+    { title: "Maintenance and Support", desc: "Keep your system performing at its best with regular monitoring, servicing, and expert assistance.", link: "/services" },
   ];
 
   return (
@@ -166,7 +185,7 @@ const Solutions = () => {
                 <p className={`text-sm leading-relaxed mb-6 ${isDark ? 'text-white/70' : 'text-gray-600'}`}>
                   {sol.desc}
                 </p>
-                <Link href="/services"><button className={`text-xs font-medium px-4 py-2 rounded border transition-all ${isDark
+                <Link href={sol.link}><button className={`text-xs font-medium px-4 py-2 rounded border transition-all ${isDark
                   ? 'border-white/40 hover:bg-white/20 text-white'
                   : 'border-gray-900/20 hover:bg-gray-900 hover:text-white text-gray-900'
                   }`}>
@@ -185,7 +204,7 @@ const EcoStats = () => {
   const stats = [
     {
       n1: '₹6.4M', l1: 'Most Cost-effective', d1: 'Helped customers save millions in energy costs with affordable solar solutions.',
-      n2: '100K+', l2: 'Successfully Installation', d2: 'Delivered reliable solar systems for homes and businesses across the country.'
+      n2: '1000+', l2: 'Successfully Installation', d2: 'Delivered reliable solar systems for homes and businesses across the country.'
     },
     {
       n1: '15MW+', l1: 'Clean Energy Generated', d1: 'Produced massive amounts of renewable energy to power thousands of homes and businesses.',
@@ -541,7 +560,7 @@ export default function Home() {
               "@type": "LocalBusiness",
               name: "KK Enterprise Solar",
               url: "https://kkenterprisesolar.com",
-              telephone: "+919925590208",
+              telephone: "+919925590016",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "609-610, Rajvi Icon, Nikol",

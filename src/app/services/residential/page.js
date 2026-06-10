@@ -1,7 +1,9 @@
 "use client";
+import CountdownSection from '@/components/countdown';
 import LocationsSection from '@/components/state';
 import { hover } from 'framer-motion';
 import { ArrowBigDown, ChevronDown, PhoneCall, Zap, Leaf, Home, Shield, User, Ruler, FileCheck, Wrench, Power, ZapIcon } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 
@@ -66,10 +68,15 @@ const recentInstallations = [
 
 const brandLogos = [
     { logo: "/logo.webp", width: 190 },
-    { logo: "/APS.png", width: 90 },
+    { logo: "/APS.png", width: 113 },
     { logo: "/WAAREE.png", width: 140 },
     { logo: "/logo-black.webp", width: 140 },
     { logo: "/sungrow.svg", width: 160 },
+    { logo: "/kosol.svg", width: 140 },
+    { logo: "/polycab.png", width: 140 },
+    { logo: "/Vsole-Solar.svg", width: 140 },
+    { logo: "/solar-yaan.webp", width: 140 },
+    { logo: "/RR-Kabel.svg", width: 140 },
 ];
 
 // ─── Sub-components ──────────────────────────────────────────────────────────
@@ -138,17 +145,19 @@ const Residential = () => {
                     <div className="flex flex-col items-center text-center mb-8 sm:mb-12">
 
                         {/* Logo Pill */}
-                        <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm rounded-full px-5 sm:px-6 py-2.5 sm:py-3 shadow-xl mb-5 sm:mb-6">
-                            <Zap className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-500" />
-                            <span className="text-gray-800 font-bold text-sm sm:text-lg tracking-wide">
-                                KK ENTERPRISE
-                            </span>
-                        </div>
+                        <Image
+                            src="/logo.png"
+                            alt="KK Enterprise"
+                            width={500}
+                            height={150}
+                            priority
+                            className="h-24 md:h-28 w-auto object-contain"
+                        />
 
                         {/* Tagline */}
                         <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-green-200 drop-shadow-lg leading-snug max-w-2xl px-2">
-                            Enjoy near <span className='text-yellow-300'>ZERO ELECTRICITY</span> bills for{" "}
-                            <span className="text-yellow-300 font-bold">
+                            Enjoy near <span className='text-orange-500'>ZERO ELECTRICITY</span> bills for{" "}
+                            <span className="text-orange-500 font-bold">
                                 <br />25 years
                             </span>*
                         </h1>
@@ -165,9 +174,9 @@ const Residential = () => {
                         ].map((stat, i) => (
                             <div
                                 key={`l${i}`}
-                                className="bg-sky-300/80 backdrop-blur-sm rounded-[50%] px-3 sm:px-6 py-3 sm:py-5 text-center shadow-lg flex flex-col items-center justify-center aspect-[2/1] sm:aspect-auto"
+                                className="bg-blend-saturation backdrop-blur-sm rounded-[50%] px-3 sm:px-6 py-3 sm:py-5 text-center shadow-lg flex flex-col items-center justify-center aspect-[2/1] sm:aspect-auto"
                             >
-                                <div className="text-yellow-300 text-xl md:text-2xl font-bold drop-shadow-sm">
+                                <div className="text-orange-500 text-xl md:text-2xl font-bold drop-shadow-sm">
                                     {stat.value}
                                 </div>
                                 <div className="text-white text-md md:text-sm font-medium whitespace-pre-line leading-tight mt-0.5 sm:mt-1">
@@ -184,9 +193,9 @@ const Residential = () => {
                         ].map((stat, i) => (
                             <div
                                 key={`r${i}`}
-                                className="bg-sky-300/80 backdrop-blur-sm rounded-[50%] px-3 sm:px-6 py-3 sm:py-5 text-center shadow-lg flex flex-col items-center justify-center aspect-[2/1] sm:aspect-auto"
+                                className="bg-blend-saturation backdrop-blur-sm rounded-[50%] px-3 sm:px-6 py-3 sm:py-5 text-center shadow-lg flex flex-col items-center justify-center aspect-[2/1] sm:aspect-auto"
                             >
-                                <div className="text-yellow-300 text-xl md:text-2xl font-bold drop-shadow-sm">
+                                <div className="text-orange-500 text-xl md:text-2xl font-bold drop-shadow-sm">
                                     {stat.value}
                                 </div>
                                 <div className="text-white text-md md:text-sm font-medium whitespace-pre-line leading-tight mt-0.5 sm:mt-1">
@@ -261,6 +270,9 @@ const Residential = () => {
                     </div>
                 </div>
             </section>
+
+            <CountdownSection />
+
 
             {/* ══ 3. KEY BENEFITS ══════════════════════════════════════════════ */}
             <section className="py-16 bg-[#F5F5F5]">
@@ -393,12 +405,19 @@ const Residential = () => {
                     </div>
                 </div>
 
-                <div className="flex justify-center items-center mt-10">
-                    <Link href="#contact">
+                <div className='flex justify-center items-center mt-10'>
+                    <button
+                        onClick={() => {
+                            document.getElementById("contact")?.scrollIntoView({
+                                behavior: "smooth",
+                                block: "start",
+                            });
+                        }}
+                    >
                         <h1 className="border-2 rounded-xl p-3 font-semibold text-gray-700 hover:text-black">
                             Contact Now <ArrowBigDown className="inline" />
                         </h1>
-                    </Link>
+                    </button>
                 </div>
             </section>
 
@@ -428,7 +447,7 @@ const Residential = () => {
                     </div>
 
                     {/* Brand text fallbacks */}
-                    <div className="flex flex-wrap justify-center items-center gap-15">
+                    <div className="flex flex-wrap justify-center items-center gap-15 bg-orange-200 rounded-xl py-10">
                         {brandLogos.map((b, i) => (
                             <span key={i} className="text-gray-400 font-semibold text-sm hover:text-gray-700 transition">
                                 <img src={b.logo} alt={b.logo} width={b.width} className="h-auto object-contain" />

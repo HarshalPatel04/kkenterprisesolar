@@ -118,15 +118,28 @@ export default function About() {
 
             {/* CTA */}
             <section className="bg-[#EDE8DF] py-20 text-center px-6">
-                <h2 className="text-4xl font-semibold mb-6">
-                    Ready To Switch To Solar?
-                </h2>
-                <a
-                    href="/#contact"
-                    className="bg-[#2A2620] text-white px-8 py-3 rounded-md"
-                >
-                    Get Free Consultation
-                </a>
+
+                <div>
+                    <h2 className="text-4xl font-semibold mb-6">
+                        Ready To Switch To Solar?
+                    </h2>
+                    <button
+                        onClick={() => {
+                            document.getElementById("contact")?.scrollIntoView({
+                                behavior: "smooth",
+                                block: "start",
+                            });
+                        }}
+                    >
+                        <a
+                            href="/#contact"
+                            className="bg-[#2A2620] text-white px-8 py-3 rounded-md"
+                        >
+                            Get Free Consultation
+                        </a>
+                    </button>
+                </div>
+
             </section>
         </>
     );

@@ -4,7 +4,7 @@ const teamMembers = [
     {
         name: "Keyur Patel",
         role: "Business Development Manager",
-        image: "/dummy.jpg",
+        image: "/keyur.png",
     },
     {
         name: "Amit Verma",
@@ -14,22 +14,17 @@ const teamMembers = [
     {
         name: "Urvashi Rathod",
         role: "Liasioning Head",
-        image: "/dummy2.jpg",
-    },
-    {
-        name: "Pathik Patel",
-        role: "Marketing Manager",
-        image: "/dummy.jpg",
+        image: "/urvashi.png",
     },
     {
         name: "Jainish Hirapara",
         role: "Customer Onboarding Specialist",
-        image: "/dummy.jpg",
+        image: "/jainish.png",
     },
     {
-        name: "Urvashi Rathod",
+        name: "Mahi Shah",
         role: "Liasioning Head",
-        image: "/dummy2.jpg",
+        image: "/mahi.png",
     },
 ];
 
@@ -46,7 +41,7 @@ export default function ExpertTeam() {
                     Meet the Professionals Behind Our Success
                 </h2>
 
-                <div className="flex flex-wrap justify-center gap-10 w-75 md:w-auto">
+                <div className="flex flex-wrap justify-center gap-15 w-75 md:w-auto">
 
                     {teamMembers.map((member, index) => (
                         <div

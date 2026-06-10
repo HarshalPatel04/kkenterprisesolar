@@ -19,6 +19,7 @@ const Footer = () => {
   async function handleSubmit() {
     if (!form.firstName) return toast.error("First name required");
     if (!form.email.includes("@")) return toast.error("Valid email required");
+    if (!form.phone) return toast.error("Phone number required");
     if (!form.message) return toast.error("Message required");
 
     try {
@@ -58,7 +59,7 @@ const Footer = () => {
   }
 
   return (
-    <footer id="contact">
+    <footer>
       <div className="grid md:grid-cols-2 min-h-[60vh]">
         {/* Left Info */}
         <div className="bg-[#1E1C18] text-white p-12 lg:p-20 relative overflow-hidden">
@@ -74,13 +75,13 @@ const Footer = () => {
               <p className="text-md opacity-70 leading-relaxed cursor-pointer my-1 mb-4"><a href="https://maps.app.goo.gl/d5bv9k5J7QA1zbkT9" target="_blank" rel="noopener noreferrer"><span className="font-semibold">Branch Address:</span> Pragati Empire IT park B-414, Mota Varachha<br />Surat, India</a></p>
               <p className="text-md opacity-70 leading-relaxed cursor-default my-1 mb-4"><span className="font-semibold">Our Branches:</span> Vadodara, Bhavnagar, Amreli, Rajkot, Junagadh, Jamnagar, Banaskantha, Mehesana, Sabar Kantha, Mahisagar, Panch Mahal</p>
               <p className="text-md opacity-70 leading-relaxed cursor-pointer my-1 mb-4"><a href="https://maps.app.goo.gl/vdzw1jbRoU7ePiVv7" target="_blank" rel="noopener noreferrer"><span className="font-semibold">Warehouse Address:</span> Ashwamegh Shopping, Vivekandnagar, Hathijan<br />Ahmedabad, India</a></p>
-              <p className="text-md opacity-70 mt-2 mb-4"><a href="tel:+919925590208"><span className="font-semibold">Phone:</span> +91 99255 90208</a><a href="tel:+919727097421"><span> , +91 97270 97421</span></a></p>
+              <p className="text-md opacity-70 mt-2 mb-4"><a href="tel:+919925590208"><span className="font-semibold">Phone:</span> +91 99255 90 208</a><a href="tel:+919925590308"><span> / 308</span></a></p>
               <p className="text-md opacity-70 mt-2 mb-4"><a href="mailto:kkenterprise0410@gmail.com" target="_blank" rel="noopener noreferrer"><span className="font-semibold">Email:</span> kkenterprise0410@gmail.com</a></p>
             </div>
 
             <div>
               <h4 className="text-sm font-semibold opacity-50 uppercase tracking-wider mb-3">Quick links</h4>
-              <div className="flex gap-6 flex-wrap">
+              <div id="contact" className="flex gap-6 flex-wrap">
                 <a href="/" className="text-sm opacity-60 hover:opacity-100 transition-opacity">Home</a>
                 <a href="/services" className="text-sm opacity-60 hover:opacity-100 transition-opacity">Services</a>
                 <a href="/projects" className="text-sm opacity-60 hover:opacity-100 transition-opacity">Projects</a>
@@ -149,10 +150,11 @@ const Footer = () => {
 
           <div className="flex flex-col gap-2 mb-4">
             <label className="text-xs text-gray-500 font-medium">
-              Phone number
+              Phone number*
             </label>
             <input
               type="tel"
+              minLength={10}
               value={form.phone}
               onChange={(e) =>
                 setForm({ ...form, phone: e.target.value })
@@ -222,7 +224,7 @@ const Footer = () => {
         <a href="https://www.linkedin.com/in/harshalpatel-nov4"
           target="_blank"
           className="opacity-55 hover:opacity-100 transition-opacity font-bold cursor-pointer">
-          <h1 className="text-sm">Made with ❤️ by Harshal Patel</h1></a>
+          <h1 className="text-sm">Design & Developed by Harshal Patel</h1></a>
       </div>
     </footer>
   );

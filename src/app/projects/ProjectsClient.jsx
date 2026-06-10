@@ -35,6 +35,144 @@ export default function ProjectsPage() {
             capacity: "95 KW",
             img: "/projects/95.jpeg"
         },
+        {
+            title: "Industrial Plant",
+            location: "Jay Ambe Dalvada, Ahmedabad",
+            capacity: "15 KW",
+            img: "/projects/JayAmbeDalvada.jpeg"
+        },
+        {
+            title: "Industrial Plant",
+            location: "Mother Shree, Ahmedabad",
+            capacity: "110 KW",
+            img: "/projects/MotherShree.jpeg"
+        },
+        {
+            title: "Industrial Plant",
+            location: "Gopinath, Ahmedabad",
+            capacity: "250 KW",
+            img: "/projects/Gopinath.jpeg"
+        },
+        {
+            title: "Industrial Plant",
+            location: "Pinakar, Ahmedabad",
+            capacity: "25 KW",
+            img: "/projects/pinakar.jpeg"
+        },
+        {
+            title: "Industrial Plant",
+            location: "Jay Ambe, Ahmedabad",
+            capacity: "325 KW",
+            img: "/projects/jayAmbe.jpeg"
+        },
+        {
+            title: "Residential Plant",
+            location: "Ahmedabad",
+            capacity: "3.5 KW",
+            img: "/projects/2.jpeg"
+        },
+        {
+            title: "Residential Plant",
+            location: "Ahmedabad",
+            capacity: "3.5 KW",
+            img: "/projects/3.jpeg"
+        },
+        {
+            title: "Residential Plant",
+            location: "Ahmedabad",
+            capacity: "3.5 KW",
+            img: "/projects/4.jpeg"
+        },
+        {
+            title: "Residential Plant",
+            location: "Ahmedabad",
+            capacity: "3.5 KW",
+            img: "/projects/5.jpeg"
+        },
+        {
+            title: "Residential Plant",
+            location: "Ahmedabad",
+            capacity: "3.5 KW",
+            img: "/projects/6.jpeg"
+        },
+        {
+            title: "Residential Plant",
+            location: "Ahmedabad",
+            capacity: "3.5 KW",
+            img: "/projects/7.jpeg"
+        },
+        {
+            title: "Residential Plant",
+            location: "Ahmedabad",
+            capacity: "3.5 KW",
+            img: "/projects/8.jpeg"
+        },
+        {
+            title: "Residential Plant",
+            location: "Ahmedabad",
+            capacity: "3.5 KW",
+            img: "/projects/9.jpeg"
+        },
+        {
+            title: "Residential Plant",
+            location: "Ahmedabad",
+            capacity: "3.5 KW",
+            img: "/projects/10.jpeg"
+        },
+        {
+            title: "Residential Plant",
+            location: "Ahmedabad",
+            capacity: "3.5 KW",
+            img: "/projects/11.jpeg"
+        },
+        {
+            title: "Residential Plant",
+            location: "Ahmedabad",
+            capacity: "3.5 KW",
+            img: "/projects/12.jpeg"
+        },
+        {
+            title: "Residential Plant",
+            location: "Ahmedabad",
+            capacity: "3.5 KW",
+            img: "/projects/13.jpeg"
+        },
+        {
+            title: "Residential Plant",
+            location: "Ahmedabad",
+            capacity: "3.5 KW",
+            img: "/projects/14.jpeg"
+        },
+        {
+            title: "Residential Plant",
+            location: "Ahmedabad",
+            capacity: "3.5 KW",
+            img: "/projects/15.jpeg"
+        },
+        {
+            title: "Residential Plant",
+            location: "Ahmedabad",
+            capacity: "3.5 KW",
+            img: "/projects/16.jpeg"
+        },
+        {
+            title: "Residential Plant",
+            location: "Ahmedabad",
+            capacity: "3.5 KW",
+            img: "/projects/17.jpeg"
+        },
+        {
+            title: "Residential Plant",
+            location: "Ahmedabad",
+            capacity: "3.5 KW",
+            img: "/projects/18.jpeg"
+        },
+        {
+            title: "Residential Plant",
+            location: "Ahmedabad",
+            capacity: "3.5 KW",
+            img: "/projects/19.jpeg"
+        },
     ]
 
 

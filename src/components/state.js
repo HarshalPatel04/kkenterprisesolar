@@ -38,7 +38,7 @@ export default function LocationsSection() {
 
                         <div>
                             <p className="font-semibold">Office Number</p>
-                            <p>+91 99255 90208 , +91 97270 97421</p>
+                            <p>+91 99255 90 208 / 308</p>
                         </div>
 
                         <hr />
