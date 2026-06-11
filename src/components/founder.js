@@ -39,7 +39,7 @@ export default function FounderThought() {
 
                     <div>
                         <p className="font-semibold text-[#1E1C18] text-lg">
-                            Mr. Krushal Patel
+                            Mr. Krushal Lathiya
                         </p>
                         <p className="text-sm text-gray-500">
                             MD & Founder, KK Enterprise

@@ -8,7 +8,7 @@ const teamMembers = [
     }, {
         name: "Meet Gajera",
         role: "Marketing Manager",
-        image: "/meet.png",
+        image: "/meet.jpeg",
     },
     {
         name: "Amit Verma",
@@ -17,7 +17,7 @@ const teamMembers = [
     },
     {
         name: "Urvashi Rathod",
-        role: "Liasioning Head",
+        role: "Sales Executive",
         image: "/urvashi.png",
     },
     {
@@ -55,7 +55,7 @@ export default function ExpertTeam() {
                         >
 
                             {/* Image */}
-                            <div className="h-[320px] overflow-hidden">
+                            <div className="h-[330px] overflow-hidden">
                                 <img
                                     src={member.image}
                                     alt={member.name}
