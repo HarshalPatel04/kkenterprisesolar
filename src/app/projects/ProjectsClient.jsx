@@ -63,7 +63,7 @@ export default function ProjectsPage() {
             title: "Industrial Plant",
             location: "Jay Ambe, Ahmedabad",
             capacity: "325 KW",
-            img: "/projects/jayAmbe.jpeg"
+            img: "/projects/jayambe.jpeg"
         },
         {
             title: "Residential Plant",
