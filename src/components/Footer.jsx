@@ -76,7 +76,7 @@ const Footer = () => {
               <p className="text-md opacity-70 leading-relaxed cursor-default my-1 mb-4"><span className="font-semibold">Our Branches:</span> Vadodara, Bhavnagar, Amreli, Rajkot, Junagadh, Jamnagar, Banaskantha, Mehesana, Sabar Kantha, Mahisagar, Panch Mahal</p>
               <p className="text-md opacity-70 leading-relaxed cursor-pointer my-1 mb-4"><a href="https://maps.app.goo.gl/vdzw1jbRoU7ePiVv7" target="_blank" rel="noopener noreferrer"><span className="font-semibold">Warehouse Address:</span> Ashwamegh Shopping, Vivekandnagar, Hathijan<br />Ahmedabad, India</a></p>
               <p className="text-md opacity-70 mt-2 mb-4"><a href="tel:+919925590208"><span className="font-semibold">Phone:</span> +91 99255 90 208</a><a href="tel:+919925590308"><span> / 308</span></a></p>
-              <p className="text-md opacity-70 mt-2 mb-4"><a href="mailto:kkenterprise0410@gmail.com" target="_blank" rel="noopener noreferrer"><span className="font-semibold">Email:</span> kkenterprise0410@gmail.com</a></p>
+              <p className="text-md opacity-70 mt-2 mb-4"><a href="mailto:info@kkenterprisesolar.com" target="_blank" rel="noopener noreferrer"><span className="font-semibold">Email:</span> info@kkenterprisesolar.com</a></p>
             </div>
 
             <div>

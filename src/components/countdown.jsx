@@ -59,7 +59,7 @@ export default function CountdownSection() {
             <div className="max-w-6xl mx-auto text-center">
 
                 <div className="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-white/5 border border-white/10 mb-8">
-                    <Hourglass className="w-10 h-10 text-orange-500" />
+                    <Hourglass className="w-10 h-10 text-[#FF5630]" />
                 </div>
 
                 <h3 className="uppercase tracking-[6px] font-semibold text-sm md:text-lg mb-6">
@@ -70,7 +70,7 @@ export default function CountdownSection() {
                     PM Surya Ghar Subsidy
                 </h2>
 
-                <p className="text-xl md:text-3xl text-orange-500/70 mb-16">
+                <p className="text-xl md:text-3xl text-[#FF5630]/70 mb-16">
                     Scheme closes on{" "}
                     <span className="text-red-500 font-bold">
                         31 March 2027
@@ -83,7 +83,7 @@ export default function CountdownSection() {
                             key={item.label}
                             className="bg-white/5 border border-white/10 backdrop-blur-md rounded-3xl py-10 hover:scale-105 transition-all duration-300"
                         >
-                            <div className="text-5xl md:text-7xl font-bold text-orange-500">
+                            <div className="text-5xl md:text-7xl font-bold text-[#FF5630]">
                                 {item.value}
                             </div>
 

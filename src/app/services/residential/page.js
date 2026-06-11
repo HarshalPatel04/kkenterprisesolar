@@ -156,8 +156,8 @@ const Residential = () => {
 
                         {/* Tagline */}
                         <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-green-200 drop-shadow-lg leading-snug max-w-2xl px-2">
-                            Enjoy near <span className='text-orange-500'>ZERO ELECTRICITY</span> bills for{" "}
-                            <span className="text-orange-500 font-bold">
+                            Enjoy near <span className='text-[#FF5630]'>ZERO ELECTRICITY</span> bills for{" "}
+                            <span className="text-[#FF5630] font-bold">
                                 <br />25 years
                             </span>*
                         </h1>
@@ -176,7 +176,7 @@ const Residential = () => {
                                 key={`l${i}`}
                                 className="bg-blend-saturation backdrop-blur-sm rounded-[50%] px-3 sm:px-6 py-3 sm:py-5 text-center shadow-lg flex flex-col items-center justify-center aspect-[2/1] sm:aspect-auto"
                             >
-                                <div className="text-orange-500 text-xl md:text-2xl font-bold drop-shadow-sm">
+                                <div className="text-[#FF5630] text-xl md:text-2xl font-bold drop-shadow-sm">
                                     {stat.value}
                                 </div>
                                 <div className="text-white text-md md:text-sm font-medium whitespace-pre-line leading-tight mt-0.5 sm:mt-1">
@@ -195,7 +195,7 @@ const Residential = () => {
                                 key={`r${i}`}
                                 className="bg-blend-saturation backdrop-blur-sm rounded-[50%] px-3 sm:px-6 py-3 sm:py-5 text-center shadow-lg flex flex-col items-center justify-center aspect-[2/1] sm:aspect-auto"
                             >
-                                <div className="text-orange-500 text-xl md:text-2xl font-bold drop-shadow-sm">
+                                <div className="text-[#FF5630] text-xl md:text-2xl font-bold drop-shadow-sm">
                                     {stat.value}
                                 </div>
                                 <div className="text-white text-md md:text-sm font-medium whitespace-pre-line leading-tight mt-0.5 sm:mt-1">
@@ -211,9 +211,9 @@ const Residential = () => {
             <section className="py-16 bg-white">
                 <div className="max-w-6xl mx-auto px-6">
                     <h2 className="text-3xl font-bold text-center mb-2">
-                        Why <span className="text-orange-500">Solar Wins</span>
+                        Why <span className="text-[#FF5630]">Solar Wins</span>
                     </h2>
-                    <div className="w-12 h-1 bg-orange-500 mx-auto mb-10 rounded-full" />
+                    <div className="w-12 h-1 bg-[#FF5630] mx-auto mb-10 rounded-full" />
 
                     <div className="grid md:grid-cols-2 gap-10 items-center">
                         {/* Left: Text */}
@@ -262,7 +262,7 @@ const Residential = () => {
                             <div className="mt-4 text-center bg-orange-50 rounded-xl py-3 px-4">
                                 <p className="text-gray-700 text-sm font-medium">
                                     You save approx{" "}
-                                    <span className="text-orange-500 font-bold text-lg">₹7.3 Lakhs</span>{" "}
+                                    <span className="text-[#FF5630] font-bold text-lg">₹7.3 Lakhs</span>{" "}
                                     with Solar!
                                 </p>
                             </div>
@@ -278,13 +278,13 @@ const Residential = () => {
             <section className="py-16 bg-[#F5F5F5]">
                 <div className="max-w-6xl mx-auto px-6">
                     <h2 className="text-3xl font-bold text-center mb-2">
-                        Key <span className="text-orange-500">Benefits</span>
+                        Key <span className="text-[#FF5630]">Benefits</span>
                     </h2>
-                    <div className="w-12 h-1 bg-orange-500 mx-auto mb-10 rounded-full" />
+                    <div className="w-12 h-1 bg-[#FF5630] mx-auto mb-10 rounded-full" />
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                         {keyBenefits.map((b, i) => (
                             <div key={i} className="bg-white rounded-2xl p-6 text-center shadow-sm border border-gray-100 hover:shadow-md transition">
-                                <div className="w-14 h-14 rounded-full bg-orange-50 flex items-center justify-center text-orange-500 mx-auto mb-4">
+                                <div className="w-14 h-14 rounded-full bg-orange-50 flex items-center justify-center text-[#FF5630] mx-auto mb-4">
                                     {b.icon}
                                 </div>
                                 <h3 className="font-semibold text-gray-800 mb-2 text-sm md:text-base">{b.title}</h3>
@@ -299,13 +299,13 @@ const Residential = () => {
             <section className="py-16 bg-white">
                 <div className="max-w-6xl mx-auto px-6">
                     <h2 className="text-3xl font-bold text-center mb-2">
-                        Installation <span className="text-orange-500">Process</span>
+                        Installation <span className="text-[#FF5630]">Process</span>
                     </h2>
-                    <div className="w-12 h-1 bg-orange-500 mx-auto mb-10 rounded-full" />
+                    <div className="w-12 h-1 bg-[#FF5630] mx-auto mb-10 rounded-full" />
                     <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
                         {installationSteps.map((step, i) => (
                             <div key={i} className="flex flex-col items-center text-center hover:shadow-md rounded-2xl p-5 border border-gray-100 bg-white transition">
-                                <div className={`w-16 h-16 rounded-full flex items-center justify-center text-orange-500 hover:text-white border-2 border-orange-500 mb-3 shadow-md hover:bg-orange-500 "bg-orange-500" transition-colors}`}>
+                                <div className={`w-16 h-16 rounded-full flex items-center justify-center text-[#FF5630] hover:text-white border-2 border-[#FF5630] mb-3 shadow-md hover:bg-[#FF5630] "bg-[#FF5630]" transition-colors}`}>
                                     {step.icon}
                                 </div>
                                 <span className="text-xs text-orange-400 font-bold mb-1">{step.num}</span>
@@ -321,9 +321,9 @@ const Residential = () => {
             <section className="py-16 bg-[#F5F5F5]">
                 <div className="max-w-6xl mx-auto px-6">
                     <h2 className="text-3xl font-bold text-center mb-2">
-                        Recent <span className="text-orange-500">Installations</span>
+                        Recent <span className="text-[#FF5630]">Installations</span>
                     </h2>
-                    <div className="w-12 h-1 bg-orange-500 mx-auto mb-10 rounded-full" />
+                    <div className="w-12 h-1 bg-[#FF5630] mx-auto mb-10 rounded-full" />
                     <div className="flex flex-wrap gap-6 justify-center">
                         {recentInstallations.map((proj, i) => (
                             <div key={i} className="w-94 rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white group">
@@ -337,7 +337,7 @@ const Residential = () => {
                                 <div className="p-3">
                                     <div className='flex justify-between'>
                                         <p className="font-semibold text-gray-800 text-md">{proj.title}</p>
-                                        <p className="font-semibold text-orange-500 text-md">{proj.kw}</p>
+                                        <p className="font-semibold text-[#FF5630] text-md">{proj.kw}</p>
                                     </div>
                                     <p className="text-gray-500 text-sm mt-1">{proj.location}</p>
                                 </div>
@@ -396,7 +396,7 @@ const Residential = () => {
                         {kw && (
                             <div className="mt-6 bg-orange-50 border border-orange-200 rounded-xl p-5 text-center">
                                 <p className="text-gray-600 text-sm mb-1">Recommended system size for you</p>
-                                <p className="text-3xl font-bold text-orange-500">{kw}</p>
+                                <p className="text-3xl font-bold text-[#FF5630]">{kw}</p>
                                 <p className="text-gray-500 text-xs mt-1">
                                     Based on your monthly bill of ₹{billRange.replace("-", " – ")}
                                 </p>
@@ -425,9 +425,9 @@ const Residential = () => {
             <section className="py-16 bg-[#F5F5F5]">
                 <div className="max-w-6xl mx-auto px-6">
                     <h2 className="text-3xl font-bold text-center mb-2">
-                        World-Class <span className="text-orange-500">Materials</span>
+                        World-Class <span className="text-[#FF5630]">Materials</span>
                     </h2>
-                    <div className="w-12 h-1 bg-orange-500 mx-auto mb-3 rounded-full" />
+                    <div className="w-12 h-1 bg-[#FF5630] mx-auto mb-3 rounded-full" />
                     <p className="text-center text-gray-500 text-md mb-10">
                         We don't compromise on quality. Your system is built using only top-tier components from trusted global brands.
                     </p>
@@ -440,7 +440,7 @@ const Residential = () => {
                             { label: "Structure", brands: "Apollo, Tata Pipes, Hutch India (Hot Dip Galvanized)" },
                         ].map((item, i) => (
                             <div key={i} className="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
-                                <p className="font-semibold text-md mb-1 text-orange-500">{item.label}</p>
+                                <p className="font-semibold text-md mb-1 text-[#FF5630]">{item.label}</p>
                                 <p className="text-gray-500 text-sm leading-relaxed">{item.brands}</p>
                             </div>
                         ))}
@@ -463,7 +463,7 @@ const Residential = () => {
             {/* ══ 9. FAQ ════════════════════════════════════════════════════════ */}
             <section className="py-16 bg-white" id="faq">
                 <div className="max-w-3xl mx-auto px-6">
-                    <p className="text-center text-xs font-semibold tracking-widest text-orange-500 uppercase mb-2">
+                    <p className="text-center text-xs font-semibold tracking-widest text-[#FF5630] uppercase mb-2">
                         Got Questions?
                     </p>
                     <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-2">
