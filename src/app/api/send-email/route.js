@@ -23,10 +23,14 @@ export async function POST(req) {
     });
 
     console.log(data);
+    console.log("EMAIL ERROR:", error);
 
     return Response.json({ success: true });
   } catch (error) {
     console.log("EMAIL ERROR:", error);
-    return Response.json({ success: false });
+    return Response.json({
+      success: false,
+      error: error.message,
+    });
   }
 }
