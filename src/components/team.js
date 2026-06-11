@@ -5,10 +5,14 @@ const teamMembers = [
         name: "Keyur Patel",
         role: "Business Development Manager",
         image: "/keyur.png",
+    }, {
+        name: "Meet Gajera",
+        role: "Marketing Manager",
+        image: "/meet.png",
     },
     {
         name: "Amit Verma",
-        role: "Solar Project Coordinator",
+        role: "Project Manager",
         image: "/dummy.jpg",
     },
     {
@@ -23,9 +27,10 @@ const teamMembers = [
     },
     {
         name: "Mahi Shah",
-        role: "Liasioning Head",
+        role: "Liasioning Executive",
         image: "/mahi.png",
     },
+   
 ];
 
 export default function ExpertTeam() {
