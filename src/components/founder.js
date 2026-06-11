@@ -9,7 +9,7 @@ export default function FounderThought() {
                 <div className="flex justify-center md:justify-start mx-5 md:mx-0">
                     <div className="relative">
                         <img
-                            src="/krushal.png"
+                            src="/krushal-lathiya.png"
                             alt="Founder"
                             className="w-[320px] h-[420px] object-cover rounded-xl shadow-xl"
                         />
