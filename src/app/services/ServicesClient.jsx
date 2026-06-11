@@ -47,6 +47,19 @@ export default function Services() {
         }
     ]
 
+    const brandLogos = [
+        { logo: "/logo.webp", width: 190 },
+        { logo: "/APS.png", width: 113 },
+        { logo: "/WAAREE.png", width: 140 },
+        { logo: "/logo-black.webp", width: 140 },
+        { logo: "/sungrow.svg", width: 160 },
+        { logo: "/kosol.svg", width: 140 },
+        { logo: "/polycab.png", width: 140 },
+        { logo: "/Vsole-Solar.svg", width: 140 },
+        { logo: "/solar-yaan.webp", width: 140 },
+        { logo: "/RR-Kabel.svg", width: 140 },
+    ];
+
     return (
 
         <div className="bg-[#f5f5f5] max-w-screen overflow-hidden">
@@ -101,50 +114,13 @@ export default function Services() {
                     We Service Leading Solar Brands
                 </p>
 
-
-                <div className="flex flex-wrap justify-center items-center gap-16">
-
-
-                    <motion.div
-                        initial={{ opacity: 0, y: 100 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                    ><img src="logo.webp" alt="Adani" className="w-40 h-auto" /></motion.div>
-
-
-                    <motion.div
-                        initial={{ opacity: 0, y: 130 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                    ><img src="APS.png" alt="APS" className="w-35 md:w-30 h-auto" /></motion.div>
-
-
-                    {/* <img src="APS (2).png" alt="APS" className="w-140 h-auto" /> */}
-
-
-                    <motion.div
-                        initial={{ opacity: 0, y: 160 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                    ><img src="WAAREE.png" alt="WAAREE" className="w-40 h-auto" /></motion.div>
-
-
-                    {/* <img src="Rayzon.png" alt="Rayzon" className="w-140 h-auto" /> */}
-
-
-                    <motion.div
-                        initial={{ opacity: 0, y: 190 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                    ><img src="logo-black.webp" alt="Rayzon" className="w-40 h-auto" /></motion.div>
-
-
-                    <motion.div
-                        initial={{ opacity: 0, y: 220 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                    ><img src="sungrow.svg" alt="KSolare" className="w-40 h-auto" /></motion.div>
-
+                {/* Brand text fallbacks */}
+                <div className="flex flex-wrap justify-center items-center gap-15 bg-orange-200 rounded-xl py-10">
+                    {brandLogos.map((b, i) => (
+                        <span key={i} className="text-gray-400 font-semibold text-sm hover:text-gray-700 transition">
+                            <img src={b.logo} alt={b.logo} width={b.width} className="h-auto object-contain" />
+                        </span>
+                    ))}
                 </div>
 
             </section>

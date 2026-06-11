@@ -434,10 +434,10 @@ const Residential = () => {
 
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mb-10">
                         {[
-                            { label: "Premium Panels", brands: "TATA, Adani, Waaree, Pahal" },
-                            { label: "Smart Inverters", brands: "Havells, Sofar, KSolare, Solar Yaan" },
+                            { label: "Premium Panels", brands: "Kosol, Adani, Waaree, Pahal" },
+                            { label: "Smart Inverters", brands: "KSolare, Solar Yaan, Polycab" },
                             { label: "AC/DC Wires", brands: "Polycab, Havells, RR cable, Finolex" },
-                            { label: "Structure", brands: "Apollo, Tata Pipes, Hutch India (Hot Dip Galvanized)" },
+                            { label: "Structure", brands: "Apollo, Jindal, Surya,  Hutch India (Hot Dip Galvanized)" },
                         ].map((item, i) => (
                             <div key={i} className="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
                                 <p className="font-semibold text-md mb-1 text-[#FF5630]">{item.label}</p>
