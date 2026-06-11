@@ -68,109 +68,109 @@ export default function ProjectsPage() {
         {
             title: "Residential Plant",
             location: "Ahmedabad",
-            capacity: "3.5 KW",
+            capacity: "3.7 KW",
             img: "/projects/2.jpeg"
         },
         {
             title: "Residential Plant",
             location: "Ahmedabad",
-            capacity: "3.5 KW",
+            capacity: "8 KW",
             img: "/projects/3.jpeg"
         },
         {
             title: "Residential Plant",
             location: "Ahmedabad",
-            capacity: "3.5 KW",
+            capacity: "3.7 KW",
             img: "/projects/4.jpeg"
         },
         {
             title: "Residential Plant",
             location: "Ahmedabad",
-            capacity: "3.5 KW",
+            capacity: "3.3 KW",
             img: "/projects/5.jpeg"
         },
         {
             title: "Residential Plant",
             location: "Ahmedabad",
-            capacity: "3.5 KW",
+            capacity: "12 KW",
             img: "/projects/6.jpeg"
         },
         {
             title: "Residential Plant",
             location: "Ahmedabad",
-            capacity: "3.5 KW",
+            capacity: "6 KW",
             img: "/projects/7.jpeg"
         },
         {
             title: "Residential Plant",
             location: "Ahmedabad",
-            capacity: "3.5 KW",
+            capacity: "24 KW",
             img: "/projects/8.jpeg"
         },
         {
             title: "Residential Plant",
             location: "Ahmedabad",
-            capacity: "3.5 KW",
+            capacity: "7 KW",
             img: "/projects/9.jpeg"
         },
         {
             title: "Residential Plant",
             location: "Ahmedabad",
-            capacity: "3.5 KW",
+            capacity: "5 KW",
             img: "/projects/10.jpeg"
         },
         {
             title: "Residential Plant",
             location: "Ahmedabad",
-            capacity: "3.5 KW",
+            capacity: "6.6 KW",
             img: "/projects/11.jpeg"
         },
         {
             title: "Residential Plant",
             location: "Ahmedabad",
-            capacity: "3.5 KW",
+            capacity: "12 KW",
             img: "/projects/12.jpeg"
         },
         {
             title: "Residential Plant",
             location: "Ahmedabad",
-            capacity: "3.5 KW",
+            capacity: "3.3 KW",
             img: "/projects/13.jpeg"
         },
         {
             title: "Residential Plant",
             location: "Ahmedabad",
-            capacity: "3.5 KW",
+            capacity: "3.6 KW",
             img: "/projects/14.jpeg"
         },
         {
             title: "Residential Plant",
             location: "Ahmedabad",
-            capacity: "3.5 KW",
+            capacity: "3.7 KW",
             img: "/projects/15.jpeg"
         },
         {
             title: "Residential Plant",
             location: "Ahmedabad",
-            capacity: "3.5 KW",
+            capacity: "3.7 KW",
             img: "/projects/16.jpeg"
         },
         {
             title: "Residential Plant",
-            location: "Ahmedabad",
-            capacity: "3.5 KW",
+            location: "Shree Nand Elite, Ahmedabad",
+            capacity: "71 KW",
             img: "/projects/17.jpeg"
         },
         {
             title: "Residential Plant",
             location: "Ahmedabad",
-            capacity: "3.5 KW",
+            capacity: "4.4 KW",
             img: "/projects/18.jpeg"
         },
         {
             title: "Residential Plant",
             location: "Ahmedabad",
-            capacity: "3.5 KW",
+            capacity: "4.4 KW",
             img: "/projects/19.jpeg"
         },
     ]
