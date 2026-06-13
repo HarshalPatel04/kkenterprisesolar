@@ -22,6 +22,11 @@ const Footer = () => {
     if (!form.phone) return toast.error("Phone number required");
     if (!form.message) return toast.error("Message required");
 
+    // Validate phone BEFORE API call
+    if (!/^[0-9]{10}$/.test(form.phone)) {
+      return toast.error("Please enter a valid 10-digit phone number");
+    }
+
     try {
       setLoading(true);
 
@@ -36,6 +41,14 @@ const Footer = () => {
       const data = await res.json();
 
       if (data.success) {
+        // GTM / GA4 Lead Event
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: "kk_form_lead_success",
+          lead_type: "form_submit",
+          page_type: "residential",
+        });
+
         toast.success("Message sent successfully!");
         setSent(true);
 
@@ -51,7 +64,8 @@ const Footer = () => {
       } else {
         toast.error("Failed to send message");
       }
-    } catch {
+    } catch (error) {
+      console.error(error);
       toast.error("Something went wrong");
     } finally {
       setLoading(false);
@@ -154,11 +168,16 @@ const Footer = () => {
             </label>
             <input
               type="tel"
-              minLength={10}
               value={form.phone}
-              onChange={(e) =>
-                setForm({ ...form, phone: e.target.value })
-              }
+              onChange={(e) => {
+                const value = e.target.value.replace(/\D/g, ""); // only numbers
+
+                if (value.length <= 10) {
+                  setForm({ ...form, phone: value });
+                }
+              }}
+              pattern="[0-9]{10}"
+              required
               className="bg-black/5 border-none p-3 rounded text-sm focus:bg-black/10 outline-none transition-colors"
             />
           </div>
