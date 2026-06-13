@@ -6,6 +6,7 @@ import { Toaster } from "react-hot-toast";
 import localFont from 'next/font/local'
 import { FloatingToggle } from './page';
 import Script from "next/script";
+import { Analytics } from '@vercel/analytics/next';
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
@@ -97,6 +98,7 @@ export default function RootLayout({ children }) {
         <main className="pt-16">{children}</main>
         <FloatingToggle />
         <Footer />
+        <Analytics />
 
       </body>
     </html>
