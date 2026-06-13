@@ -7,6 +7,7 @@ import localFont from 'next/font/local'
 import { FloatingToggle } from './page';
 import Script from "next/script";
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
@@ -99,6 +100,7 @@ export default function RootLayout({ children }) {
         <FloatingToggle />
         <Footer />
         <Analytics />
+        <SpeedInsights />
 
       </body>
     </html>
