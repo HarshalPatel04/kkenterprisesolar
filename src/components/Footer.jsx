@@ -89,7 +89,7 @@ const Footer = () => {
               <p className="text-md opacity-70 leading-relaxed cursor-pointer my-1 mb-4"><a href="https://maps.app.goo.gl/d5bv9k5J7QA1zbkT9" target="_blank" rel="noopener noreferrer"><span className="font-semibold">Branch Address:</span> Pragati Empire IT park B-414, Mota Varachha<br />Surat, India</a></p>
               <p className="text-md opacity-70 leading-relaxed cursor-default my-1 mb-4"><span className="font-semibold">Our Branches:</span> Vadodara, Bhavnagar, Amreli, Rajkot, Junagadh, Jamnagar, Banaskantha, Mehesana, Sabar Kantha, Mahisagar, Panch Mahal</p>
               <p className="text-md opacity-70 leading-relaxed cursor-pointer my-1 mb-4"><a href="https://maps.app.goo.gl/vdzw1jbRoU7ePiVv7" target="_blank" rel="noopener noreferrer"><span className="font-semibold">Warehouse Address:</span> Ashwamegh Shopping, Vivekandnagar, Hathijan<br />Ahmedabad, India</a></p>
-              <p className="text-md opacity-70 mt-2 mb-4"><a href="tel:+919925590016"><span className="font-semibold">Phone:</span> +91 99255 90 016</a></p>
+              <p className="text-md opacity-70 mt-2 mb-4"><a href="tel:+919925590016"><span className="font-semibold">Phone:</span> +91 99255 90016</a></p>
               <p className="text-md opacity-70 mt-2 mb-4"><a href="mailto:info@kkenterprisesolar.com" target="_blank" rel="noopener noreferrer"><span className="font-semibold">Email:</span> info@kkenterprisesolar.com</a></p>
             </div>
 
