@@ -66,18 +66,18 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 60%, rgba(0,0,0,0.6) 100%), url('/landingIMG.jpg')`
+          backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,0) 100%), url('/landingIMG.png')`
         }}
       />
 
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md border border-white/30 px-4 py-1.5 rounded-full text-xs text-white mb-6 animate-fade-up cursor-default">
+        <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md border border-white/30 px-4 py-1.5 rounded-full text-xs text-[#17184F] mb-6 animate-fade-up cursor-default">
           <span className="w-1.5 h-1.5 bg-white rounded-full"></span>
           Utility prices have steadily increased
         </div>
 
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-medium text-[#F5E6C8] leading-tight tracking-tight animate-fade-up cursor-default" style={{ animationDelay: '0.1s' }}>
-          Energy Saving<br />Renewable Solar
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-medium text-white leading-tight tracking-tight animate-fade-up cursor-default" style={{ animationDelay: '0.1s' }}>
+          Energy Saving<br /><span className="text-[#F7B719]">Renewable</span> Solar
         </h1>
 
         <p className="mt-6 text-sm md:text-base text-white/80 max-w-lg mx-auto leading-relaxed font-light animate-fade-up cursor-default" style={{ animationDelay: '0.2s' }}>
