@@ -101,6 +101,10 @@ export default function RootLayout({ children }) {
         <Footer />
         <Analytics />
         <SpeedInsights />
+<<<<<<< HEAD
+=======
+
+>>>>>>> 60ef174f094b5bf1b7411d44e6bf457454942147
       </body>
     </html>
   );
